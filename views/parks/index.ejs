@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+
+    <header class="jumbotron">
+        <h1>The Most Amazing Parks on Earth</h1>
+        <p>View our popular national parks submitted by our patrons</p>
+        <p>
+            <a class="btn btn-primary btn-large" href="/parks/new"><i class="fa fa-tree" aria-hidden="true"></i> Add New Park</a>
+        </p>
+    </header>
+    
+    <div class= "row text-center" style="display:flex; flex-wrap: wrap;">
+         <% parks.forEach(function(park){ %>
+            <div class="col-md-3 col-md-6">
+                    <div class="thumbnail">
+                        <img src="<%= park.image %>">
+                            <div class="caption">
+                                <h4><%=park.name %></h4>
+                                <p><a href="/parks/<%= park._id %>" class="btn btn-primary btn-sm"><i class="fa fa-info" aria-hidden="true"></i> More Info</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <% }); %>
+    </div>
+
+<% include ../partials/footer %>
