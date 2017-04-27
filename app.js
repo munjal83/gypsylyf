@@ -17,7 +17,8 @@ var reviewRoutes = require("./routes/reviews");
 var parkRoutes = require("./routes/parks");
 var indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/gypsylyf");
+//mongoose.connect("mongodb://localhost/gypsylyf");
+mongoose.connect("mongodb://munjal:1234qazx@ds123381.mlab.com:23381/gypsylyf");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
