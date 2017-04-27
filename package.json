@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
+    
   },
   "author": "Munjal Patel",
   "license": "MIT",
@@ -23,3 +24,4 @@
     "passport-local-mongoose": "^4.0.0"
   }
 }
+
