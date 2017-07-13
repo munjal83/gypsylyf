@@ -2,6 +2,9 @@
   "name": "expressstartup",
   "version": "1.0.0",
   "description": "A startup based on nodejs and expressjs",
+  "engines": {
+    "node": "6.11.1"
+  }
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
